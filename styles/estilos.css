@@ -1,0 +1,704 @@
+*{
+    font-family: arial;
+}
+a{
+    text-decoration: none;
+}
+/*Contenedor del body*/
+.contenedor{
+    width: 900px;
+    margin: auto;
+    border: 1px solid #999;
+    background: #C4F7F1;
+    overflow: hidden;
+}
+/*inicio de sesion*/
+header .ven {
+    background:white;
+    /* width: 63%;*/
+    width: 700px;
+    min-height: 350px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 3;
+    margin: 130px 110px;
+    display:none;
+    overflow: hidden;
+}
+header .ven #clos img{
+width: 50px;
+height: 50px;
+float: right;
+margin: 0;
+}
+header .ven li{
+    list-style: none;
+    display: block;
+    margin: 30px;
+    font-size: 20px;
+}
+header .ven li p{
+    font-size: 15px;
+}
+/*header*/
+header{
+    height: 100px;
+    padding: 5px 5px;
+    text-align: center;
+    overflow: hidden;
+}
+header .foto{
+width: 400px;
+    text-align: center;
+   float: left;
+    position: relative;
+    margin-left: 50%;
+    left: -200px;
+}
+header .foto img{
+   width: 400px;
+
+}
+header .redes{
+    position: absolute;
+float: right;
+width: 300px;
+    margin-left: 595px;
+    overflow: hidden;
+}
+header .redes li{
+    list-style: none;
+    padding: 10px 90px;
+}
+header .redes li input{
+    font-size: 17px;
+    background: #9BB9F3;
+}
+header .redes #fotos{
+    width: 110px;
+    float: left;
+    background: #D1AACB;
+    padding: 3px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+header .redes #fotos img{
+    width: 30px;
+    height: 30px;
+}
+.box{
+    width: 150px;
+    height: 30px;
+    float: right;
+}
+.container-1{
+    width: 130px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    background: #D1AACB;
+}
+.container-1 input#search{
+    width: 130px;
+    height: 40px;
+    background:  #D1AACB;
+    border: none;
+    font-size: 10pt;
+    float: right;
+    color: #4D3030;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+.container-1 .icon{
+    margin-top: 10px;
+    margin-left: -55px;
+    position: absolute;
+float: right;
+    z-index: 2;
+    color: #4D3030;
+}
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+}
+/*Nav*/
+nav{
+    text-align: center;
+    position: relative;
+}
+nav img{
+    width: 30px;
+    height:30px;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+nav > ul{
+    margin: 0;
+    padding: 4px 33px 0 0;
+    display: inline-block;
+    background:#C492E8 ;
+    border: 3px solid #291B85;
+}
+nav ul {
+    list-style: none;
+    overflow: hidden;
+}
+nav > ul > li{
+    float: left;
+    width: 14%;
+    padding: 4px 4px 8px 10px;
+
+}
+nav > ul > li > a {
+    background:#7F399F ;
+    border: 1px solid #291B85;
+}
+nav ul a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-weight: bold;
+    padding: 11px 20px;
+    width: 100%;
+}
+nav ul a:hover{
+    background:  #2BE2E1;
+}
+
+.subgrup{
+    text-align: left;
+     width: 30%;
+    position: absolute;
+    background: #90CCCC;
+    box-sizing: border-box;
+    display:none;
+    border: 3px solid #410EE4;
+    z-index: 2;
+}
+
+.subgrup li{
+    background:#80A3E2;
+    width: 100%;
+    border: 3px solid #410EE4;
+
+}
+nav ul li:hover .subgrup{
+    display: block;
+}
+
+/*sabgrupos2*/
+.subgrup .dobergroup li{
+    width: 300px;
+}
+.subgrup .dobergroup ul{
+    position: absolute;
+    left: 220px;
+    display: none;
+    z-index: 2;
+}
+.subgrup ul li:hover .dobergroup ul{
+    display: block;
+}
+/*section index*/
+
+.slide {
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.64);
+    margin: 26px;
+z-index: 1;
+}
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc( 300px + 3em);
+    background: #C8B0EF;
+}
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+    text-align: center;
+}
+.slide-item img {
+    margin: 15px auto;
+    display: block;
+    max-width: 100%;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+
+}
+.slide-item p{
+    margin: 7px;
+    text-decoration: none;
+    color: white;
+   font-size: 33px;
+}
+.slide-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+.slide-control.prev {
+    left: 2%;
+}
+.slide-control.next {
+    right: 2%;
+}
+.slide-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1,
+#slide-2:checked ~ .control-2,
+#slide-3:checked ~ .control-3 {
+    display: block;
+}
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+#slide-1:checked ~ .control-1 ~ .slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circulo {
+    color: #2121DA;
+}
+
+
+section{
+}
+section .new{
+    background: darkgrey;
+    margin: 10px 0 0 0;
+
+}
+section .new img{
+    width: 130px;
+    padding: 10px 10px;
+}
+section .text h2{
+    text-align: center;
+    color: red;
+}
+section .text p{
+    color: black;
+}
+section .new .text{
+    float: right;
+    background: #999999;
+    margin: 10px 15px;
+    padding: 10px 13px;
+
+}
+
+section .subscripcion {
+    border: 1px solid #9BB9F3;
+    text-align: center;
+    border-radius: 5px;
+    background: #9BB9F3;
+    padding: 10px ;
+    margin: 40px;
+    clear: both;
+}
+section .subscripcion li{
+
+    list-style: none;
+}
+section .subscripcion input{
+    border-radius: 10px;
+    background: #DED2C9;
+}
+section .por {
+    background:white;
+    /* width: 63%;*/
+    width: 500px;
+    min-height: 300px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 3;
+    margin: -180px 200px;
+    display:none;
+    overflow: hidden;
+}
+section .por #clos img{
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin: 0;
+}
+section .por li{
+    list-style: none;
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
+section .por li p{
+    font-size: 10px;
+}
+/*
+.cajita{
+	width: 250px;
+	border: 1px solid #999;
+	padding: 5px;
+	margin: 5px;
+}*/
+/*section sobre nosotros*/
+section .titulo{
+    border: 4px solid black;
+    background: #8C88ED;
+    text-align: center;
+    font-size: 40px;
+    margin: 40px ;
+    padding: 2px;
+    border-radius: 100px;
+}
+section .historia{
+    text-align: justify;
+    margin: 30px;
+    background: #E29DE2;
+    padding: 20px;
+}
+section .historia h2{
+    color: #0FD3F2;
+}
+section .Lugares{
+    background: #4A6B6B;
+    overflow: hidden;
+    margin: 20px;
+}
+section .Lugares h2{
+    float: left;
+    margin: 160px 0 0 100px;
+    font-size: 22px;
+    color: white;
+}
+section .Lugares iframe{
+    float: right;
+    margin: 5%;
+    width: 350px;
+    height: 300px;
+}
+/*section contacto*/
+section .contacto{
+margin: 10px;
+    background: #B6ACB6;
+    padding: 2px 0 10px 0;
+
+}
+section .contacto h2{
+    text-align: center;
+    font-size: 34px;
+    color: #0924EA;
+}
+section .contacto ul{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+}
+.contacto form label{
+    display: inline-block;
+    width: 80px;
+    margin: 5px;
+    background: #A37CEEB8;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+    text-align: center;
+}
+
+.contacto .cual label{
+    width: 400px;
+}
+section .contacto .boton input{
+
+    height: 30px;
+    font-size: 20px;
+}
+section .contacto hr{
+    margin: 10px 30px 10px 0;
+   border-color: black;
+    border-width: 2px;
+    background: black;
+}
+section .telefono{
+    overflow: hidden;
+    margin: 40px;
+    padding: 30px 100px 5px 100px;
+}
+section .telefono .online{
+    float: left;
+
+}
+section .telefono .fisica{
+    float: right;
+
+}
+section .telefono h2{
+    background:#CD92DF;
+    border: 3px solid black;
+}
+section .telefono img{
+    width: 20px;
+    height: 20px;
+
+}
+/*section eventos*/
+section .eventos{
+    overflow: hidden;
+    text-align: center;
+    margin: 0 80px 10px 80px;
+    padding: 0;
+    font-size: 20px;
+}
+section .eventos p{
+    background: #48CEF0;
+    border: 5px solid black;
+}
+section .eventos img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+section .Primero{
+    float: left;
+
+}
+section .Segundo{
+    float: right;
+
+}
+section .eventos .imagen{
+    background: blueviolet;
+    width:360px;
+    height: 300px;
+}
+section .eventos .imagen1{
+    background: #BD6DB2;
+    width: 360px;
+    height: 300px;
+}
+/*section personaliza*/
+.personaliza{
+    overflow: hidden;
+    margin:20px;
+    padding: 2px 0 10px 0;
+}
+.personaliza .texto{
+    background: #D0C94D;
+    text-align: center;
+    margin: 10px 270px;
+    border-radius: 15px;
+}
+.personaliza img{
+   width: 20px;
+    height: 20px;
+}
+.personaliza .Formulario{
+    margin: 50px 20px;
+
+}
+.personaliza .Formulario ul{
+    list-style: none;
+}
+.personaliza form label{
+    display: inline-block;
+    background: #B98DDA;
+    margin: 10px;
+    width:300px;
+    height: 10px;
+    padding: 17px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+    text-align: center;
+}
+.personaliza .precio{
+    float: left;
+    font-size: 25px;
+}
+.personaliza .lista{
+
+}
+.personaliza .lista li{
+    float: left;
+    text-align: center;
+background: darkgreen;
+    border: 2px solid black;
+    width:100px;
+    height: 20px;
+
+}
+.personaliza .lista li:hover{
+    background: indianred;
+}
+.personaliza .boton{
+    float: right;
+    margin: 0 25px 20px 0;
+    font-size: 25px;
+    text-align: center;
+}
+.personaliza .boton input{
+    font-size: 15px;
+    height: 25px;
+    color: white;
+    background: black;
+}
+.personaliza hr{
+    margin: 0 30px;
+    border-color: black;
+    border-width: 2px;
+    background: black;
+}
+/*section productos*/
+.ven {
+    background:white;
+   /* width: 63%;*/
+    width: 700px;
+    min-height: 250px;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 3;
+    margin: 130px 110px;
+    display:none;
+    overflow: hidden;
+}
+.ven img{
+    margin: 50px 100px;
+    width: 500px;
+    height: 500px;
+}
+.ven #cerrar img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin-left:630px;
+    margin-top: 5px;
+}
+section #parrafo p{
+    font-size: 20px;
+    margin-left: 70px;
+}
+section .caja{
+    overflow: hidden;
+    margin: 10px 50px;
+}
+section .caja .foto img{
+    width:95px;
+    height: 95px;
+    margin: 10px 45px;
+}
+section .caja .parte p{
+    margin: 10px;
+    font-size: 15px;
+}
+section .caja .carro{
+
+overflow: hidden;
+
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+section .caja .parte .carro img{
+   width: 50px;
+}
+section .parte{
+    float: left;
+    margin: 10px;
+    background: white;
+    width:180px;
+    height: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+/*footer*/
+footer{
+   width: auto;
+}
+footer .Arriba{
+    background: white;
+    overflow: hidden;
+}
+footer .Arriba ul li{
+    list-style: none;
+}
+footer .Pedido{
+   padding: 20px;
+    float: left;
+    width: 30%;
+}
+footer .Informacion{
+    padding: 20px;
+    float:left;
+    width: 35%;
+}
+footer .Informacion a{
+    color: black;
+}
+footer .Inicio{
+    padding: 60px 10px;
+    float:left;
+    width: 20%;
+}
+footer .Inicio  li{
+    text-align: center;
+}
+footer .Pedido img{
+    width: 8%;
+}
+footer .Abajo h2{
+    text-align: center;
+   font-size: 14px;
+    background: #000000;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
